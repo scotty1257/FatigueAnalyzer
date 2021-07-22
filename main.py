@@ -1,4 +1,6 @@
 import math
+import os
+import sys
 
 def welcome():
 
@@ -230,6 +232,97 @@ def getNotchGeometry(units):
     ratior2d = radius / small_dia
 
     return [ratioD2d, ratior2d]
+
+def getNotchType():
+
+    type = int(input("Is notch a U-Notch[1] or a Shoulder Fillet[2]: "))
+
+    return type
+
+def getStressConcFac(D_d, r_d, D, d, r, stressType, notchType):
+
+    range = (D - d) / r
+
+    if notchType == 1:
+        if stressType = 1:
+            if range >= 0.25 and range <= 2.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            elif range >= 2.0 and range <= 50.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            else:
+                return 0
+        elif stressType = 2:
+            if range >= 0.25 and range <= 2.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            elif range >= 2.0 and range <= 50.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            else:
+                return 0
+        else:
+            if range >= 0.25 and range <= 2.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            elif range >= 2.0 and range <= 50.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            else:
+                return 0
+    elif notchType == 2:
+        if stressType = 1:
+            if range >= 0.25 and range <= 2.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            elif range >= 2.0 and range <= 20.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            else:
+                return 0
+        elif stressType = 2:
+            if range >= 0.25 and range <= 2.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            elif range >= 2.0 and range <= 20.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            else:
+                return 0
+        else:
+            if range >= 0.25 and range <= 4.0:
+                c1 = a +- b * math.sqrt(range)+ - c * range
+                c2 = a +- b * math.sqrt(range)+ - c * range
+                c3 = a +- b * math.sqrt(range)+ - c * range
+                c4 = a +- b * math.sqrt(range)+ - c * range
+            else:
+                return 0
+            
+    else:
+        return 0
+
+    
 
 def getNotchSens(units, load_type, sut):
 
