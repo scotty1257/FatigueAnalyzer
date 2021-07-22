@@ -246,76 +246,76 @@ def getStressConcFac(D_d, r_d, D, d, r, stressType, notchType):
     if notchType == 1:
         if stressType = 1:
             if range >= 0.25 and range <= 2.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = 0.4550 + 3.3540 * math.sqrt(range) - 0.7690 * range
+                c2 = 3.1290 - 15.955 * math.sqrt(range) + 7.4040 * range
+                c3 = -6.909 + 29.286 * math.sqrt(range) - 16.104 * range
+                c4 = 4.3250 - 16.685 * math.sqrt(range) + 9.4690 * range
             elif range >= 2.0 and range <= 50.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 =  0.935 + 1.922 * math.sqrt(range) + 0.004 * range
+                c2 =  0.537 - 3.708 * math.sqrt(range) + 0.040 * range
+                c3 = -2.538 + 3.438 * math.sqrt(range) - 0.012 * range
+                c4 =  2.066 - 1.652 * math.sqrt(range) - 0.031 * range
             else:
                 return 0
         elif stressType = 2:
             if range >= 0.25 and range <= 2.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a + b * math.sqrt(range) - c * range
+                c2 = a - b * math.sqrt(range) + c * range
+                c3 = a + b * math.sqrt(range) - c * range
+                c4 = a - b * math.sqrt(range) + c * range
             elif range >= 2.0 and range <= 50.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             else:
                 return 0
         else:
             if range >= 0.25 and range <= 2.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             elif range >= 2.0 and range <= 50.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             else:
                 return 0
     elif notchType == 2:
         if stressType = 1:
             if range >= 0.25 and range <= 2.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             elif range >= 2.0 and range <= 20.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             else:
                 return 0
         elif stressType = 2:
             if range >= 0.25 and range <= 2.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             elif range >= 2.0 and range <= 20.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             else:
                 return 0
         else:
             if range >= 0.25 and range <= 4.0:
-                c1 = a +- b * math.sqrt(range)+ - c * range
-                c2 = a +- b * math.sqrt(range)+ - c * range
-                c3 = a +- b * math.sqrt(range)+ - c * range
-                c4 = a +- b * math.sqrt(range)+ - c * range
+                c1 = a +- b * math.sqrt(range) +- c * range
+                c2 = a +- b * math.sqrt(range) +- c * range
+                c3 = a +- b * math.sqrt(range) +- c * range
+                c4 = a +- b * math.sqrt(range) +- c * range
             else:
                 return 0
             
